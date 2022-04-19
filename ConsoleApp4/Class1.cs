@@ -10,8 +10,8 @@ namespace ConsoleApp4
     {
         public int Taxi_Id { get; set; }
         public DateTime Indulas_Ido { get; set; }
-        public int Utazas_Ido { get; set; }
-        public double Megtett_Tav { get; set; }
+        public int idötartam { get; set; }
+        public double tavolsag { get; set; }
         public double VitelDij { get; set; }
         public double Borravalo { get; set; }
         public string FizetesModja { get; set; }
@@ -22,8 +22,8 @@ namespace ConsoleApp4
 
             Taxi_Id = int.Parse(f[0]);
             Indulas_Ido = DateTime.Parse(f[1]);
-            Utazas_Ido = int.Parse(f[2]);
-            Megtett_Tav = double.Parse(f[3]);
+            idötartam = int.Parse(f[2]);
+            tavolsag = double.Parse(f[3]);
             VitelDij = double.Parse(f[4]); 
             Borravalo=double.Parse(f[5]);
             FizetesModja = f[6];

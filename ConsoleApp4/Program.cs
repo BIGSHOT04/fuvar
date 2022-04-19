@@ -18,7 +18,18 @@ namespace ConsoleApp4
             }
             Console.WriteLine($"3. feladat : {fuvaroks.Count} fuvar");
 
-
+            double bevétel = 0;
+                int db = 0;
+            foreach (var f in fuvaroks)
+            {
+                if (f.Taxi_Id==6185)
+                {
+                    bevétel += f.VitelDij + f.Borravalo;
+                    db++;
+                }
+                Console.WriteLine($"4.feladat: {db} fuvar alatt: {bevétel}");
+            }
+            
 
 
 
