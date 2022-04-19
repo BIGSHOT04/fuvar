@@ -17,6 +17,12 @@ namespace ConsoleApp4
                 fuvaroks.Add(new fuvarok(sor));
             }
             Console.WriteLine($"3. feladat : {fuvaroks.Count} fuvar");
+
+
+
+
+
+            Console.ReadKey();
         }
 
 
@@ -24,8 +30,8 @@ namespace ConsoleApp4
 
 
 
-        
+       
     }
 
-
+    
 }
