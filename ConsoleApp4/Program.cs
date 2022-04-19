@@ -11,6 +11,11 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            List<fuvarok> fuvaroks = new List<fuvarok>();
+            foreach (var item in collection)
+            {
+
+            }
         }
     }
 }

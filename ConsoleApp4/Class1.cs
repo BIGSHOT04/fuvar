@@ -9,7 +9,7 @@ namespace ConsoleApp4
     internal class fuvarok
     {
         public int Taxi_Id { get; set; }
-        public DateTime Indulas_Ido { get; set; }
+        public int Indulas_Ido { get; set; }
         public int Utazas_Ido { get; set; }
         public double Megtett_Tav { get; set; }
         public double VitelDij { get; set; }
