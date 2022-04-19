@@ -12,10 +12,20 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             List<fuvarok> fuvaroks = new List<fuvarok>();
-            foreach (var item in collection)
+            foreach (var sor in File.ReadLines("fuvar.csv").Skip(1))
             {
-
+                fuvaroks.Add(new fuvarok(sor));
             }
+            Console.WriteLine($"3. feladat : {fuvaroks.Count} fuvar");
         }
+
+
+
+
+
+
+        
     }
+
+
 }
