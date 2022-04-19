@@ -23,9 +23,9 @@ namespace ConsoleApp4
             Taxi_Id = int.Parse(f[0]);
             Indulas_Ido = DateTime.Parse(f[1]);
             Utazas_Ido = int.Parse(f[2]);
-            Megtett_Tav = int.Parse(f[3]);
-            VitelDij = int.Parse(f[4]); 
-            Borravalo=int.Parse(f[5]);
+            Megtett_Tav = double.Parse(f[3]);
+            VitelDij = double.Parse(f[4]); 
+            Borravalo=double.Parse(f[5]);
             FizetesModja = f[6];
 
         }
