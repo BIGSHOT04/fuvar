@@ -27,9 +27,9 @@ namespace ConsoleApp4
                     bevétel += f.VitelDij + f.Borravalo;
                     db++;
                 }
-                Console.WriteLine($"4.feladat: {db} fuvar alatt: {bevétel}");
+                
             }
-            
+            Console.WriteLine($"4.feladat: {db} fuvar alatt: {bevétel}");
 
 
 
