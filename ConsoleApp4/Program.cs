@@ -47,6 +47,19 @@ namespace ConsoleApp4
             Console.WriteLine($"Bankkártya: {kártyás} fuvar");
             Console.WriteLine($"Kézőénz: {cash} fuvar");
 
+
+
+
+
+            double Tmile = 0;
+
+            foreach (var d in fuvaroks)
+            {
+                Tmile += d.tavolsag;
+            }
+
+            Console.WriteLine($"{Tmile * 1.6:0.00} km");
+
             Console.ReadKey();
         }
 
