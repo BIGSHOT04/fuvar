@@ -16,7 +16,7 @@ namespace ConsoleApp4
             {
                 fuvaroks.Add(new fuvarok(sor));
             }
-            Console.WriteLine($"3. feladat : {fuvaroks.Count} fuvar");
+            Console.WriteLine($"{fuvaroks.Count} fuvar");
 
             double bevétel = 0;
                 int db = 0;
@@ -29,9 +29,23 @@ namespace ConsoleApp4
                 }
                 
             }
-            Console.WriteLine($"4.feladat: {db} fuvar alatt: {bevétel}");
+            Console.WriteLine($"{db} fuvar alatt: {bevétel}");
 
-
+            int kártyás = 0;
+            int cash = 0;
+            foreach (var d in fuvaroks)
+            {
+                if (d.FizetesModja=="bankkártyás")
+                {
+                    kártyás++;
+                }
+                if (d.FizetesModja=="kézpénz")
+                {
+                    cash++;
+                }
+            }
+            Console.WriteLine($"Bankkártya: {kártyás} fuvar");
+            Console.WriteLine($"Kézőénz: {cash} fuvar");
 
             Console.ReadKey();
         }
